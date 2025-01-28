@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B27C78C32D47E1B600EA4DFA /* SauceBarbe.otf in Resources */ = {isa = PBXBuildFile; fileRef = B27C78C22D47E1B600EA4DFA /* SauceBarbe.otf */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		B20E61532D47DC77001B3AF6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		B20E61422D47DC77001B3AF6 /* Volunteer Hour App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Volunteer Hour App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20E61522D47DC77001B3AF6 /* Volunteer Hour AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Volunteer Hour AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20E615C2D47DC77001B3AF6 /* Volunteer Hour AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Volunteer Hour AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B27C78C22D47E1B600EA4DFA /* SauceBarbe.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SauceBarbe.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +80,7 @@
 		B20E61392D47DC76001B3AF6 = {
 			isa = PBXGroup;
 			children = (
+				B27C78C22D47E1B600EA4DFA /* SauceBarbe.otf */,
 				B20E61442D47DC77001B3AF6 /* Volunteer Hour App */,
 				B20E61552D47DC77001B3AF6 /* Volunteer Hour AppTests */,
 				B20E615F2D47DC77001B3AF6 /* Volunteer Hour AppUITests */,
@@ -212,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B27C78C32D47E1B600EA4DFA /* SauceBarbe.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +406,7 @@
 				DEVELOPMENT_TEAM = NS2WHS7X88;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Volunteer-Hour-App-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +436,7 @@
 				DEVELOPMENT_TEAM = NS2WHS7X88;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Volunteer-Hour-App-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
