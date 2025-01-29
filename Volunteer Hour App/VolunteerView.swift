@@ -7,6 +7,22 @@
 
 import SwiftUI
 
+extension View {
+    func navigationBarTitleColor(_ color: Color) -> some View {
+        self.modifier(NavigationBarTitleColorModifier(color: color))
+    }
+}
+
+struct NavigationBarTitleColorModifier: ViewModifier {
+    let color: Color
+    
+    func body(content: Content) -> some View {
+        content
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbarColorScheme(.dark, for: .navigationBar)
+    }
+}
+
 struct VolunteerView: View {
     @State private var opportunities: [Opportunity] = []
     @State private var isLoading = true
@@ -27,7 +43,7 @@ struct VolunteerView: View {
                 ScrollView {
                     LazyVStack(spacing: 20) {
                         ForEach(opportunities) { opportunity in
-                            OpportunityCard(opportunity: opportunity) // Updated to include tap functionality
+                            OpportunityCard(opportunity: opportunity)
                         }
                     }
                     .padding()
@@ -35,6 +51,7 @@ struct VolunteerView: View {
             }
         }
         .navigationTitle("Volunteer Opportunities")
+        .navigationBarTitleColor(.white)
         .onAppear {
             fetchOpportunities()
         }

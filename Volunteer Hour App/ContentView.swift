@@ -11,7 +11,7 @@ struct ContentView: View {
     @State private var isAnimating = false
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 LinearGradient(colors: [.red, .black], startPoint: .topLeading, endPoint: .bottomTrailing)
                     .ignoresSafeArea()
@@ -54,6 +54,7 @@ struct ContentView: View {
                 isAnimating = true
             }
         }
+        .tint(.white) // This will change the back button color to white
     }
 }
 
