@@ -13,7 +13,7 @@ struct VolunteerView: View {
 
     var body: some View {
         ZStack {
-            LinearGradient(colors: [.orange, .blue], startPoint: .topLeading, endPoint: .bottomTrailing)
+            LinearGradient(colors: [.red, .black], startPoint: .topLeading, endPoint: .bottomTrailing)
                 .ignoresSafeArea()
 
             if isLoading {
@@ -27,7 +27,7 @@ struct VolunteerView: View {
                 ScrollView {
                     LazyVStack(spacing: 20) {
                         ForEach(opportunities) { opportunity in
-                            OpportunityCard(opportunity: opportunity)
+                            OpportunityCard(opportunity: opportunity) // Updated to include tap functionality
                         }
                     }
                     .padding()

@@ -14,6 +14,7 @@ struct Opportunity: Identifiable, Decodable {
     let date: String
     let time: String
     let location: String
+    let link: String
 
     enum CodingKeys: String, CodingKey {
         case name = "Opportunity Name"
@@ -21,5 +22,6 @@ struct Opportunity: Identifiable, Decodable {
         case date = "Date"
         case time = "Time"
         case location = "Location"
+        case link = "Link"
     }
 }

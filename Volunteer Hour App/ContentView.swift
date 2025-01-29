@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                LinearGradient(colors: [.orange, .blue], startPoint: .topLeading, endPoint: .bottomTrailing)
+                LinearGradient(colors: [.red, .black], startPoint: .topLeading, endPoint: .bottomTrailing)
                     .ignoresSafeArea()
 
                 VStack {
@@ -37,7 +37,7 @@ struct ContentView: View {
                         Text("Opportunities")
                             .font(.custom("SauceBarbe", size: 24))
                             .padding()
-                            .background(Color.yellow)
+                            .background(Color.white)
                             .foregroundColor(.black)
                             .cornerRadius(10)
                             .shadow(radius: 5)
